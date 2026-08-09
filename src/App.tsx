@@ -2,13 +2,6 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import Calculator from './components/Calculator'
 import { BonusTool, CompareTool, OvertimeTool, PAYETool, PensionTool } from './components/Tools'
-import AdSense from './components/AdSense'
-import CookieConsent from './components/CookieConsent'
-
-const AD_CLIENT = 'ca-pub-1777391486062589'
-const AD_SLOT_TOP = '7672825041'
-const AD_SLOT_MIDDLE = '6380638684'
-const AD_SLOT_BOTTOM = '5561667028'
 
 type Tab = 'calculator' | 'tools'
 type ToolTab = 'compare' | 'overtime' | 'bonus' | 'pension' | 'paye'
@@ -101,7 +94,6 @@ function App() {
       </header>
 
       <main className="site-main">
-        <AdSense client={AD_CLIENT} slot={AD_SLOT_TOP} className="ad-top" />
         {tab === 'calculator' ? (
           <Calculator />
         ) : (
@@ -127,17 +119,14 @@ function App() {
             {toolTab === 'paye' && <PAYETool />}
           </section>
         )}
-        <AdSense client={AD_CLIENT} slot={AD_SLOT_MIDDLE} className="ad-middle" />
       </main>
 
       <footer className="site-footer">
-        <AdSense client={AD_CLIENT} slot={AD_SLOT_BOTTOM} className="ad-bottom" />
         <p>
           Estimates for the {new Date().getFullYear()}-earliest available tax year, based on Revenue
           Ireland rates. Not financial advice.
         </p>
       </footer>
-      <CookieConsent />
     </div>
   )
 }
