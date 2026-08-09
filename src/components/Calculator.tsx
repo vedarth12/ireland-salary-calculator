@@ -24,7 +24,7 @@ const MARITAL_OPTIONS = [
 ]
 
 export default function Calculator() {
-  const [salary, setSalary] = useState('36000')
+  const [salary, setSalary] = useState('50000')
   const [period, setPeriod] = useState<Period>('annual')
   const [bonus, setBonus] = useState('')
   const [pension, setPension] = useState(5)
@@ -80,7 +80,7 @@ export default function Calculator() {
                 prefix="€"
                 min={0}
                 step={100}
-                placeholder="e.g. 36000"
+                placeholder="e.g. 50000"
               />
             </div>
             <div className="span-half">
