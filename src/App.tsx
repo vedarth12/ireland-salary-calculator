@@ -50,8 +50,8 @@ function App() {
           <div className="brand">
             <span className="brand-flag" aria-hidden="true" />
             <div>
-              <h1>mynetpay</h1>
-              <p>Irish Salary & Tax Calculator — PAYE · USC · PRSI</p>
+              <h1>Irish Salary & Tax Calculator</h1>
+              <p>PAYE · USC · PRSI — estimate your take-home pay</p>
             </div>
           </div>
           <div className="header-actions">
