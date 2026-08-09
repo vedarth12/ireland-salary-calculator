@@ -4,6 +4,7 @@ import Calculator from './components/Calculator'
 import { BonusTool, CompareTool, OvertimeTool, PAYETool, PensionTool } from './components/Tools'
 import AdSense from './components/AdSense'
 import CookieConsent from './components/CookieConsent'
+import { Analytics } from '@vercel/analytics/react'
 
 const AD_CLIENT = 'ca-pub-1777391486062589'
 const AD_SLOT_TOP = '7672825041'
@@ -138,6 +139,7 @@ function App() {
         </p>
       </footer>
       <CookieConsent />
+      <Analytics />
     </div>
   )
 }
